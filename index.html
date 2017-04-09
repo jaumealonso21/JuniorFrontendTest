@@ -2,10 +2,42 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Hello!</title>
+    <title>Test Jaume Alonso</title>
+    <meta name="description" content="test_Jaume Alonso">
+    <meta name="author" content="Jaume Alonso">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="js/git.js"></script>   
 </head>
 <body>
-
-<h1>Hello!</h1>
+<div id="container">
+  
+  <!-- Section of searching box  -->
+  <div id="searchingDiv">
+    <input type="text" id="searchText" />
+    <button id="subText">Search</button>
+  </div>
+  <!-- End of Section of searching box  -->
+  
+  <!-- Section of no found user  -->
+  <div id="errorDiv">
+    <p>Does not exist</p>
+  </div>
+  <!-- End of Section of found user  -->
+  
+  <!-- Section of found user  -->
+  <div id="exitDiv">
+    <table>
+      <tr><td rowspan="4"><img id="userImg" src="#" alt="userImg" /></td></tr>
+      <tr><td id="userLogin"></td></tr>
+      <tr><td id="userFullName"></td></tr>
+      <tr><td id="userBio"></td></tr>
+      <tr><td colspan="2"><span class="repoTitle">Repositories</span><p class="hLine"></p></td></tr>
+      <tr><td colspan="2" id="reposInf"></td></tr>
+    </table>
+  </div>
+  <!-- End of Section of found user  -->
+  
+</div>
 </body>
 </html>

@@ -1,0 +1,127 @@
+/*
+CSS related to test
+
+    Author     : Jaume Alonso
+*/
+
+/*-----------------Div container --------------------------------------------*/
+#container {
+    margin: 0 25%;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+    box-shadow: 10px 10px 25px #888888;
+    overflow-y: auto;
+    border-radius: 5px;
+    max-width: 400px;
+    min-height: 60px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 10px;
+    margin-top: 25px;
+}
+
+/* ------------------Section related to searching box ----------------------- */
+#searchText, #subText {
+    border-radius: 3px;
+}
+#searchText { /*Searching Text Boc */
+    min-width: 250px;
+    min-height: 25px;
+    color: #d1d1d1;
+    padding-left: 0.4em;
+}
+#subText { /*Searching Text Button*/
+    background-color: #e1e1e1;
+    font-weight: bold;
+    font-size: 0.8em;
+    min-width: 50px;
+    min-height: 30px;
+}
+/* ---------- End of Section related to searching box ----------------------- */
+
+/* ----------- Section found error ------------------------------------------ */
+#errorDiv { /* Container */
+    display:none;/*Initial status*/
+    background-color: #ffc9f4;
+    color: #ff37cc;
+    border-radius: 5px;
+    min-height: 10px;
+    min-width: 200px;
+    padding-left: 0.8em;
+    margin: 10px 0;
+}
+#errorDiv p { /* Error text */
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+/* ----------- End of Section no found user --------------------------------- */
+
+/* ------------ Section of found user --------------------------------------- */
+#exitDiv { /* Container */
+    display:none;/*Initial status*/
+}
+table {
+    width: 100%;
+}
+#userImg { /* User Avatar */
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+#userLogin, #userFullName, #userBio {
+    padding-left: 0.8em;
+}
+#userLogin {
+    font-style: italic;
+    font-size: 0.8em;  
+}
+#userFullName {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+#userBio {
+    font-size: 0.8em;
+}
+.repoTitle { /*Name of repository */
+    font-size: 1em;
+    font-weight: bold;
+}
+#reposInf { /*Fetched data from repository */
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.icons { /* Icons star & fork */
+    width: 15px;
+    height: 15px;
+    vertical-align: central;
+    text-align: center;
+}
+.data { /* Numbers of stargazers & forks */
+    font-size: 0.7em;
+    font-weight: normal;
+}
+.hLine { /* Horizontal line */
+    background: grey; 
+    height: 1px; 
+}
+.hLineRep { /* Lighter horizontal line */
+    background: lightgrey; 
+    height: 1px; 
+}
+#repoNum { /* Containing the name of the repository */
+    display: inline-block;
+    position: relative;
+    padding-left: 0.7em;
+    float: left;
+}
+#repoData { /* Containing stars&forks from the repository*/
+    display: inline-block;
+    position: relative;
+    padding-right: 0.6em;
+    float: right;
+}
+.clear {
+    clear: both;
+}
+/* ------------ End of Section of found user -------------------------------- */
